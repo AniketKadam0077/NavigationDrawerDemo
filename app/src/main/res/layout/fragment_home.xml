@@ -1,0 +1,186 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xerces.navigationdrawerdemo.Fragment.Home">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_gate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.5"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF8E1"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"
+                        android:id="@+id/imgGate"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFF8E1"
+                        android:src="@drawable/gatelogo"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#FFF8E1"
+                        android:clickable="false"
+                        android:padding="5dp"
+                        android:text="@string/gate_textview"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_psu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF8E1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"
+                        android:id="@+id/imgPSU"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFF8E1"
+                        android:src="@drawable/psu"/>
+
+                    <Button
+                        android:id="@+id/btn_current_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#FFF8E1"
+                        android:clickable="false"
+                        android:text="@string/psu_textview"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_mpsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="0.5"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF8E1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"
+                        android:id="@+id/imgMPSC"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFF8E1"
+                        android:src="@drawable/mpsclogo"/>
+
+                    <Button
+                        android:id="@+id/btn_battery_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#FFF8E1"
+                        android:clickable="false"
+                        android:text="@string/mpsc_textview"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_ies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFF8E1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="90dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="#FFF8E1"
+                        android:src="@drawable/ieslogo"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#FFF8E1"
+                        android:clickable="false"
+                        android:text="@string/ies_textview"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
